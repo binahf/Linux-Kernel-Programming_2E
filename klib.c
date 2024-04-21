@@ -232,6 +232,7 @@ void show_sizeof(void)
  * (We deliberately do not inline this function; this way, we can see it's
  * entry within a kernel stack call trace).
  */
+
 void delay_sec(long val)
 {
 	asm ("");    // force the compiler to not inline it!
